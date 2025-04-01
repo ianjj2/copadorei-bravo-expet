@@ -46,7 +46,7 @@ function TournamentRules() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-red-400 mb-1">Práticas Proibidas</h4>
-                  <p className="text-gray-300">Fraudes e manipulações resultarão em eliminação</p>
+                  <p className="text-gray-300">Qualquer indício de fraude para ativação de FTD resultará na desclassificação imediata da competição e no cancelamento da afiliação.</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ function TournamentRules() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-red-400 mb-1">Originalidade</h4>
-                  <p className="text-gray-300">Dados devem ser <span className="text-red-400 font-medium">autênticos e verificáveis</span>. Qualquer tentativa de fraude resultará em desclassificação.</p>
+                  <p className="text-gray-300">Dados devem ser <span className="text-red-400 font-medium">Dados devem ser autênticos e verificáveis. Qualquer tentativa de fraude passará por uma análise do setor responsável e se confirmado, resultará em desclassificação. Além de bloqueio da afiliação.</p>
                 </div>
               </div>
 
