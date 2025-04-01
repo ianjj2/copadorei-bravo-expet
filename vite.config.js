@@ -37,6 +37,10 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom'],
           'supabase-vendor': ['@supabase/supabase-js'],
         },
+        format: 'es',
+        entryFileNames: '[name].[hash].js',
+        chunkFileNames: '[name].[hash].js',
+        assetFileNames: '[name].[hash].[ext]'
       },
     },
     chunkSizeWarningLimit: 1000,
@@ -45,5 +49,8 @@ export default defineConfig({
   server: {
     port: 3001,
     open: true,
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', '@supabase/supabase-js']
   }
 }) 
