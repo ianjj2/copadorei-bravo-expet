@@ -2,6 +2,7 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import Login from './components/Login';
 import AdminDashboard from './components/AdminDashboard';
 import TournamentRules from './components/TournamentRules';
+import AppDownload from './components/AppDownload';
 import { auth, participants } from './supabase';
 import BravoLogo from './components/BravoLogo';
 
@@ -224,6 +225,15 @@ function App() {
                 </h1>
               </div>
               <TournamentRules />
+            </>
+          ) : activeTab === 'app' ? (
+            <>
+              <div className="text-center relative mb-16 animate-fade-in">
+                <h1 className="title-bravo text-3xl sm:text-4xl md:text-5xl animate-gradient-x">
+                  APLICATIVO MÓVEL
+                </h1>
+              </div>
+              <AppDownload />
             </>
           ) : (
             <>

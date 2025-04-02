@@ -33,6 +33,12 @@ function BravoLogo({ onLoginClick, activeTab, onTabChange }) {
             REGRAS
           </button>
           <button 
+            onClick={() => onTabChange('app')}
+            className={`text-red-500 hover:text-red-400 transition-colors font-medium ${activeTab === 'app' ? 'border-b-2 border-red-500' : ''}`}
+          >
+            APP
+          </button>
+          <button 
             onClick={onLoginClick}
             className="px-4 py-1.5 bg-gradient-to-r from-red-600 to-red-500 text-white rounded hover:from-red-500 hover:to-red-400 transition-all duration-300 font-medium shadow-[0_0_15px_rgba(255,0,0,0.3)] hover:shadow-[0_0_20px_rgba(255,0,0,0.5)]"
           >
@@ -75,6 +81,15 @@ function BravoLogo({ onLoginClick, activeTab, onTabChange }) {
             className={`block w-full text-left text-red-500 hover:text-red-400 transition-colors font-medium ${activeTab === 'rules' ? 'border-l-2 border-red-500 pl-2' : ''}`}
           >
             REGRAS
+          </button>
+          <button 
+            onClick={() => {
+              onTabChange('app');
+              setIsMenuOpen(false);
+            }}
+            className={`block w-full text-left text-red-500 hover:text-red-400 transition-colors font-medium ${activeTab === 'app' ? 'border-l-2 border-red-500 pl-2' : ''}`}
+          >
+            APP
           </button>
           <button 
             onClick={() => {
